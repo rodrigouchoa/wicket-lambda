@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>Apache Wicket Quickstart</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+		<style type="text/css">
+				.table-border {
+					border-collapse: collapse;
+				}
+				.table-border tr td {
+					border:1px solid #FF0000;
+				}
+			</style>
+	</head>
+	<body>
+		<div style="text-align: center;">
+			<h2 wicket:id="titleLabel">Insert User/Update User</h2>
+		</div>
+		
+		<form wicket:id="form">
+			<table align="center">
+				<tr>
+					<td>Name:</td>
+					<td> <input wicket:id="name" type="text" size="50"/> </td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;">
+						<input wicket:id="saveUpdateButton" type="submit" value="Save/Update"/>
+					</td>
+				</tr>
+			</table>
+			
+			<table style="margin-top: 40px;" class="table-border" align="center">
+				<tr wicket:id="listView">
+					<td style="width: 250px;"><span wicket:id="name">Michael Jordan</span></td>
+					<td> <a wicket:id="editLink" href="#">Edit</a> </td>
+				</tr>
+			</table>
+		</form>
+	
+	</body>
+</html>
